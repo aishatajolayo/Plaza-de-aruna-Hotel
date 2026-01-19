@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Hotel De Aruna Plaza</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-gray-100">
+ <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e3a8a',   // deep blue
+            accent: '#c9a227'     // gold
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-sans text-gray-800">
+
+<!-- NAVBAR -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <nav class="container mx-auto flex items-center justify-between p-4">
+    <h1 class="text-xl md:text-2xl font-bold text-primary">
+      PLAZA DE ARUNA
+    </h1>
+    
+
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="index.html" class="hover:text-accent">Home</a></li>
+      <li><a href="rooms.html" class="hover:text-accent">Rooms</a></li>
+      <li><a href="service.html" class="hover:text-accent">Services</a></li>
+      <li><a href="about.html" class="hover:text-accent">About</a></li>
+      <li><a href="contact.html" class="hover:text-accent">contact</a></li>
+    </ul>
+    <div>
+        <button><a class="py-2 px-6 rounded my-55 bg-blue-900 text-white hover:text-yellow-300" href="bookings.html">Book now</a></button>
+     </div>
+    <!-- Mobile Menu Button -->
+<button id="menu-btn" class="md:hidden text-primary text-3xl">
+  ☰
+</button>
+
+  </nav>
+  <!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+  <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+  <a href="rooms.html" class="block px-4 py-2 hover:bg-gray-100">Rooms</a>
+  <a href="services.html" class="block px-4 py-2 hover:bg-gray-100">Services</a>
+  <a href="about.html" class="block px-4 py-2 hover:bg-gray-100">About</a>
+  <a href="contact.html" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+</div>
+
+  
+</header>
+<section class="py-16">
+  <div class="max-w-xl mx-auto bg-white p-8 rounded shadow">
+    <h2 class="text-2xl font-bold mb-6 text-center">Book a Room</h2>
+
+    <form class="space-y-4">
+      <input type="text" placeholder="Full Name" class="w-full border p-3 rounded">
+      <input type="email" placeholder="Email Address" class="w-full border p-3 rounded">
+      <input type="date" class="w-full border p-3 rounded">
+      <select class="w-full border p-3 rounded">
+        <option>Select Room Type</option>
+        <option>Deluxe Room</option>
+        <option>Executive Suite</option>
+        <option>Presidential Suite</option>
+      </select>
+      <textarea placeholder="Message" class="w-full border p-3 rounded"></textarea>
+
+      <button class="w-full bg-yellow-900 text-white py-3 rounded-lg hover:bg-black">
+        Submit Booking
+      </button>
+    </form>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-300 pt-16">
+  <div class="container mx-auto px-4 grid md:grid-cols-5 gap-5">
+
+    <!-- Hotel Info -->
+    <div>
+      <h3 class="text-white text-xl font-semibold mb-4">
+        Hotel De Aruna Plaza
+      </h3>
+      <p class="text-xs leading-relaxed">
+        Hotel De Aruna Plaza offers comfort, luxury, and excellent hospitality.
+        We are committed to making every stay memorable and relaxing.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html" class="hover:text-white">Home</a></li>
+        <li><a href="rooms.html" class="hover:text-white">Rooms</a></li>
+        <li><a href="services.html" class="hover:text-white">Services</a></li>
+        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h4 class="text-white font-semibold mb-4">Our Services</h4>
+      <ul class="space-y-2 text-sm">
+        <li>Luxury Rooms</li>
+        <li>Restaurant & Bar</li>
+        <li>Free Wi-Fi</li>
+        <li>24/7 Front Desk</li>
+        <li>Airport Pickup</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="text-white font-semibold mb-4">Contact Us</h4>
+      <ul class="space-y-2 text-sm">
+        <li>📍 OYO, Oyo state, Nigeria</li>
+        <li>📞 +234 810 738 6011</li>
+        <li>✉ info@hoteldearuna.com</li>
+      </ul>
+    </div>
+    <!-- Newsletter -->
+    <div>
+      <h4 class="text-white font-semibold mb-4">Newsletter</h4>
+      <p class="text-sm mb-4">Subscribe to receive latest offers & updates:</p>
+      <form class="flex flex-col sm:flex-row gap-2">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="w-full p-2 rounded text-gray-800"
+        />
+        <button
+          type="submit"
+          class="bg-accent text-black px-4 py-2 rounded hover:opacity-90"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  </div>
+  
+
+  <!-- Bottom -->
+  <div class="border-t border-gray-700 mt-10 py-4 text-center text-sm">
+    © 2026 Hotel De Aruna Plaza. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
