@@ -58,7 +58,6 @@
   <a href="contact.html" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
 </div>
 
-
   
 </header>
 
@@ -307,5 +306,13 @@ designs & decorating ideas. View pictures and find your <br>
     © 2026 Plaza De' Aruna Hotel. All rights reserved.
   </div>
 </footer>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
 </body>
 </html>
