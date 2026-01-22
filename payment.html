@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure Payment</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center px-3 sm:px-6">
+
+  <div
+    class="bg-white rounded-xl shadow-lg w-full max-w-5xl
+           grid grid-cols-1 md:grid-cols-2 gap-6
+           p-4 sm:p-6 md:p-8"
+  >
+
+    <!-- Booking Summary -->
+    <div class="bg-gray-50 rounded-lg p-4 sm:p-6">
+      <h2 class="text-lg sm:text-xl font-semibold mb-4">
+        Booking Summary
+      </h2>
+
+      <div class="space-y-2 text-sm sm:text-base">
+        <p><span class="font-medium">Hotel:</span> Plaza de' Aruna Hotel</p>
+        <p><span class="font-medium">Room:</span> Deluxe Suite</p>
+        <p><span class="font-medium">Check-in:</span> 20 Feb 2026</p>
+        <p><span class="font-medium">Check-out:</span> 23 Feb 2026</p>
+        <p><span class="font-medium">Guests:</span> 2 Adults</p>
+      </div>
+
+      <div class="border-t mt-4 pt-4 flex justify-between font-semibold text-base">
+        <span>Total</span>
+        <span>₦120,000</span>
+      </div>
+    </div>
+
+    <!-- Payment Form -->
+    <div>
+      <h2 class="text-lg sm:text-xl font-semibold mb-4">
+        Payment Details
+      </h2>
+
+      <form class="space-y-4 sm:space-y-5">
+
+        <!-- Accepted Cards -->
+        <div class="bg-gray-50 p-3 rounded-lg">
+          <p class="text-xs text-gray-500 mb-2">Accepted cards</p>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <img src="image/visa_payment_method_card_icon_142729.svg" class="h-7" alt="Visa" />
+            <img src="image/mastercard_payment_method_card_icon_142734.svg" class="h-7" alt="Mastercard" />
+            <img src="image/verve_payment_method_icon_142747.svg" class="h-7" alt="Verve" />
+            <img src="image/paypal_payment_method_card_icon_142733.svg" class="h-7" alt="PayPal" />
+          </div>
+        </div>
+
+        <!-- Cardholder Name -->
+        <div>
+          <label class="block text-sm mb-1">Cardholder Name</label>
+          <input
+            type="text"
+            placeholder="Aishat Ajolayo"
+            class="w-full border rounded-lg px-4 py-2.5
+                   focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <!-- Card Number -->
+        <div>
+          <label class="block text-sm mb-1">Card Number</label>
+          <input
+            type="text"
+            placeholder="1234 5678 9012 3456"
+            class="w-full border rounded-lg px-4 py-2.5
+                   focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <!-- Expiry & CVV -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm mb-1">Expiry Date</label>
+            <input
+              type="text"
+              placeholder="MM/YY"
+              class="w-full border rounded-lg px-4 py-2.5
+                     focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm mb-1">CVV</label>
+            <input
+              type="password"
+              placeholder="123"
+              class="w-full border rounded-lg px-4 py-2.5
+                     focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label class="block text-sm mb-1">Email Address</label>
+          <input
+            type="email"
+            placeholder="example@email.com"
+            class="w-full border rounded-lg px-4 py-2.5
+                   focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <!-- Pay Button -->
+        <button
+          type="submit"
+          class="w-full bg-yellow-600 hover:bg-black
+                 text-white py-3 rounded-lg font-semibold
+                 transition active:scale-[0.98]"
+        >
+          Pay ₦120,000
+        </button>
+
+        <p class="text-xs text-gray-500 text-center mt-2">
+          🔒 Secure payment. Your card details are encrypted.
+        </p>
+
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>
